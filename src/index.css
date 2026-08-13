@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tertiary: #1A1A1A;
+  --color-on-secondary: #ffffff;
+  --color-outline-variant: #e5e7eb;
+  --color-inventory-green: #16a34a;
+  --color-on-primary-container: #4b5563;
+  --color-on-tertiary-fixed-variant: #374151;
+  --color-on-surface: #1A1A1A;
+  --color-on-primary: #ffffff;
+  --color-inverse-on-surface: #f3f4f6;
+  --color-error: #dc2626;
+  --color-surface-variant: #f3f4f6;
+  --color-roasted-bean: #111827;
+  --color-on-secondary-fixed: #000000;
+  --color-on-primary-fixed: #111827;
+  --color-primary-fixed-dim: #9ca3af;
+  --color-tertiary-fixed-dim: #d1d5db;
+  --color-surface-container-highest: #e5e7eb;
+  --color-tertiary-container: #1F2937;
+  --color-on-tertiary: #ffffff;
+  --color-surface-container-low: #ffffff;
+  --color-primary-container: #111827;
+  --color-surface-container-lowest: #ffffff;
+  --color-secondary-fixed-dim: #9ca3af;
+  --color-on-surface-variant: #4b5563;
+  --color-error-container: #fee2e2;
+  --color-on-secondary-container: #1f2937;
+  --color-on-secondary-fixed-variant: #374151;
+  --color-tertiary-fixed: #f3f4f6;
+  --color-on-tertiary-fixed: #111827;
+  --color-on-primary-fixed-variant: #4b5563;
+  --color-surface-bright: #ffffff;
+  --color-surface-dim: #e5e7eb;
+  --color-on-error-container: #991b1b;
+  --color-secondary-fixed: #f3f4f6;
+  --color-espresso-dark: #1A1A1A;
+  --color-primary-fixed: #e5e7eb;
+  --color-latte-foam: #F3F4F6;
+  --color-primary: #1A1A1A;
+  --color-outline: #9ca3af;
+  --color-inverse-primary: #d1d5db;
+  --color-surface-tint: #111827;
+  --color-background: #F3F4F6;
+  --color-inverse-surface: #1F2937;
+  --color-surface: #F3F4F6;
+  --color-on-background: #1A1A1A;
+  --color-surface-container-high: #f9fafb;
+  --color-on-tertiary-container: #9ca3af;
+  --color-surface-container: #ffffff;
+  --color-secondary: #000000;
+  --color-secondary-container: #1A1A1A;
+  --color-on-error: #ffffff;
+
+  --font-serif: 'Space Grotesk', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F3F4F6;
+  color: #1A1A1A;
+}
+
+.font-headline, .font-display, h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+

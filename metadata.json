@@ -1,0 +1,6 @@
+{
+  "name": "Artisanal Roast Co.",
+  "description": "B2B bulk coffee bean supplier portal with single origin reserves, bulk deals, loyalty rewards, and account management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
