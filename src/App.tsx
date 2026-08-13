@@ -12,6 +12,7 @@ import { SampleRequestModal } from './components/SampleRequestModal';
 import { CustomPalletModal } from './components/CustomPalletModal';
 import { OrderHistoryView } from './components/OrderHistoryView';
 import { SupportModal } from './components/SupportModal';
+import { DisqusForum } from './components/DisqusForum';
 
 import {
   INITIAL_PRODUCTS,
@@ -317,6 +318,9 @@ export default function App() {
           </div>
         </main>
       )}
+
+      {/* Discussion Forum */}
+      <DisqusForum />
 
       {/* Footer */}
       <footer className="w-full py-12 px-6 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8 bg-black text-white border-t border-gray-800 mt-auto">
