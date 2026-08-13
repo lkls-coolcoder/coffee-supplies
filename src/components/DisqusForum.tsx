@@ -4,6 +4,13 @@ export const DisqusForum: React.FC = () => {
   const [loadError, setLoadError] = useState(false);
 
   useEffect(() => {
+    const handleGlobalError = (event: ErrorEvent) => {
+      if (event.message === 'Script error.' || event.filename?.includes('disqus.com')) {
+        event.preventDefault();
+      }
+    };
+    window.addEventListener('error', handleGlobalError);
+
     // Configure Disqus variables on window
     (window as any).disqus_config = function (this: any) {
       this.page.url = window.location.href;
@@ -48,6 +55,10 @@ export const DisqusForum: React.FC = () => {
       };
       (document.head || document.body).appendChild(s);
     }
+
+    return () => {
+      window.removeEventListener('error', handleGlobalError);
+    };
   }, []);
 
   return (
